@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
+
 contract SubscriptionPlatform {
     address public owner;
     uint256 public subscriptionFee;
@@ -47,3 +48,4 @@ contract SubscriptionPlatform {
         payable(owner).transfer(address(this).balance);
     }
 }
+
